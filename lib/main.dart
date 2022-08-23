@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:tech_blog/gen/assets.gen.dart';
+import 'package:tech_blog/spalash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         Locale('fa', ''), // farsi
       ],
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: Center( child: Assets.img.logo.image() ),)
+      home: spalashScreen()
     
     );
   }
