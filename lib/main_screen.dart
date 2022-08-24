@@ -29,16 +29,18 @@ class MainScreen extends StatelessWidget {
             const SizedBox(
               height: 16,
             ),
-            Stack(children: [
+            Stack(
+              children: [
               // homePosterCover
               Container(
                 width: size.width / 1.25,
                 height: size.height / 4.3,
-                foregroundDecoration: const BoxDecoration(
+                foregroundDecoration:  BoxDecoration(
                     color: Colors.black45,
-                    borderRadius: BorderRadius.all(Radius.circular(15)),
-                    
-                    gradient: LinearGradient(
+                    borderRadius:  BorderRadius.all(Radius.circular(15)),
+                 image: DecorationImage(image: Assets.img.posterTest).image
+
+                    gradient: const LinearGradient(
                         colors: GradiantColors.homePosterCoverGradiant,
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter)),
@@ -51,8 +53,8 @@ class MainScreen extends StatelessWidget {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children:  [
-                        Text("ملیکا غزیزی یک روز پیش"),
+                      children:  const [
+                        Text("ملیکا عزیزی یک روز پیش"),
                         Text("Like 253")
                       ],
                     )
