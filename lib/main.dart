@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:tech_blog/gen/assets.gen.dart';
+import 'package:tech_blog/main_screen.dart';
 import 'package:tech_blog/spalash_screen.dart';
+// import 'package:tech_blog/spalash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,17 +14,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      localizationsDelegates: const [
+    return const MaterialApp(
+      localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: const [
+      supportedLocales: [
         Locale('fa', ''), // farsi
       ],
+
+      
       debugShowCheckedModeBanner: false,
-      home: spalashScreen()
+      home: SpalashScreen()
     
     );
   }
